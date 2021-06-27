@@ -14,36 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32A-PU U1
-U 1 1 5EC14C29
-P 2950 9350
-F 0 "U1" H 2950 7261 50  0000 C CNN
-F 1 "ATmega32A-PU" H 2950 7170 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 2950 9350 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H 2950 9350 50  0001 C CNN
-	1    2950 9350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR01
-U 1 1 5EC1A25C
-P 800 9350
-F 0 "#PWR01" H 800 9200 50  0001 C CNN
-F 1 "+5V" H 815 9523 50  0000 C CNN
-F 2 "" H 800 9350 50  0001 C CNN
-F 3 "" H 800 9350 50  0001 C CNN
-	1    800  9350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  9250 900  9250
-Wire Wire Line
-	900  9250 900  9350
-Connection ~ 900  9350
-Wire Wire Line
-	900  9350 950  9350
-$Comp
-L power:GND #PWR05
+L aek2_usb-rescue:GND-power #PWR05
 U 1 1 5EC1B971
 P 5000 9700
 F 0 "#PWR05" H 5000 9450 50  0001 C CNN
@@ -53,155 +24,6 @@ F 3 "" H 5000 9700 50  0001 C CNN
 	1    5000 9700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 9950 1450 10200
-Wire Wire Line
-	1450 10200 1400 10200
-Wire Wire Line
-	1650 9950 1650 10200
-Wire Wire Line
-	1650 10200 1700 10200
-$Comp
-L power:GND #PWR016
-U 1 1 5EC20D0B
-P 1550 10800
-F 0 "#PWR016" H 1550 10550 50  0001 C CNN
-F 1 "GND" H 1555 10627 50  0000 C CNN
-F 2 "" H 1550 10800 50  0001 C CNN
-F 3 "" H 1550 10800 50  0001 C CNN
-	1    1550 10800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR011
-U 1 1 5EC225CD
-P 2650 10200
-F 0 "#PWR011" H 2650 10050 50  0001 C CNN
-F 1 "+5V" H 2665 10373 50  0000 C CNN
-F 2 "" H 2650 10200 50  0001 C CNN
-F 3 "" H 2650 10200 50  0001 C CNN
-	1    2650 10200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 5EC2408B
-P 2650 10800
-F 0 "#PWR017" H 2650 10550 50  0001 C CNN
-F 1 "GND" H 2655 10627 50  0000 C CNN
-F 2 "" H 2650 10800 50  0001 C CNN
-F 3 "" H 2650 10800 50  0001 C CNN
-	1    2650 10800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5EC24E4A
-P 2650 10500
-F 0 "C2" H 2750 10500 50  0000 L CNN
-F 1 "0.1u" H 2750 10400 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2688 10350 50  0001 C CNN
-F 3 "~" H 2650 10500 50  0001 C CNN
-	1    2650 10500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5EC26052
-P 3000 10500
-F 0 "C3" H 3100 10500 50  0000 L CNN
-F 1 "0.1u" H 3100 10400 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 3038 10350 50  0001 C CNN
-F 3 "~" H 3000 10500 50  0001 C CNN
-	1    3000 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 10350 2650 10350
-Connection ~ 2650 10350
-Wire Wire Line
-	2650 10350 3000 10350
-Wire Wire Line
-	3000 10650 2650 10650
-Connection ~ 2650 10650
-Wire Wire Line
-	2650 10650 2300 10650
-Wire Wire Line
-	2650 10800 2650 10650
-Wire Wire Line
-	2650 10350 2650 10200
-$Comp
-L Device:CP1 C1
-U 1 1 5EC27FBD
-P 2300 10500
-F 0 "C1" H 2400 10500 50  0000 L CNN
-F 1 "4.7u" H 2400 10400 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2300 10500 50  0001 C CNN
-F 3 "~" H 2300 10500 50  0001 C CNN
-	1    2300 10500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push Reset1
-U 1 1 5EC388A6
-P 3800 10700
-F 0 "Reset1" H 3800 10985 50  0000 C CNN
-F 1 "Reset" H 3800 10894 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3800 10900 50  0001 C CNN
-F 3 "~" H 3800 10900 50  0001 C CNN
-	1    3800 10700
-	1    0    0    -1  
-$EndComp
-Text GLabel 1250 9950 3    50   Input ~ 0
-reset
-Text GLabel 4150 10700 2    50   Input ~ 0
-reset
-Wire Wire Line
-	4150 10700 4050 10700
-$Comp
-L power:GND #PWR018
-U 1 1 5EC3C298
-P 3450 10800
-F 0 "#PWR018" H 3450 10550 50  0001 C CNN
-F 1 "GND" H 3455 10627 50  0000 C CNN
-F 2 "" H 3450 10800 50  0001 C CNN
-F 3 "" H 3450 10800 50  0001 C CNN
-	1    3450 10800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 10800 3450 10700
-Wire Wire Line
-	3450 10700 3600 10700
-$Comp
-L Device:R R4
-U 1 1 5EC3DF92
-P 4050 10450
-F 0 "R4" H 4120 10496 50  0000 L CNN
-F 1 "10k" H 4120 10405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3980 10450 50  0001 C CNN
-F 3 "~" H 4050 10450 50  0001 C CNN
-	1    4050 10450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 10600 4050 10700
-Connection ~ 4050 10700
-Wire Wire Line
-	4050 10700 4000 10700
-$Comp
-L power:+5V #PWR012
-U 1 1 5EC40F65
-P 4050 10200
-F 0 "#PWR012" H 4050 10050 50  0001 C CNN
-F 1 "+5V" H 4065 10373 50  0000 C CNN
-F 2 "" H 4050 10200 50  0001 C CNN
-F 3 "" H 4050 10200 50  0001 C CNN
-	1    4050 10200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 10200 4050 10300
 Text GLabel 4350 8750 1    50   Input ~ 0
 boot
 Text GLabel 4150 8750 1    50   Input ~ 0
@@ -215,44 +37,7 @@ SCK
 Text GLabel 4250 8750 1    50   Input ~ 0
 D-
 $Comp
-L Device:D_Zener D1
-U 1 1 5EC4BFB3
-P 9200 10450
-F 0 "D1" V 9200 10300 50  0000 L CNN
-F 1 "3.6V" V 9300 10250 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9200 10450 50  0001 C CNN
-F 3 "~" H 9200 10450 50  0001 C CNN
-	1    9200 10450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D2
-U 1 1 5EC4C94A
-P 9350 10450
-F 0 "D2" V 9350 10500 50  0000 L CNN
-F 1 "3.6V" V 9450 10500 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 9350 10450 50  0001 C CNN
-F 3 "~" H 9350 10450 50  0001 C CNN
-	1    9350 10450
-	0    1    1    0   
-$EndComp
-Text GLabel 10000 10200 2    50   Input ~ 0
-D-
-Text GLabel 10000 10100 2    50   Input ~ 0
-D+
-$Comp
-L Device:Polyfuse F1
-U 1 1 5EC5DC2A
-P 8950 10000
-F 0 "F1" V 8725 10000 50  0000 C CNN
-F 1 "500mA" V 8816 10000 50  0000 C CNN
-F 2 "Fuse:Fuse_Littelfuse_395Series" H 9000 9800 50  0001 L CNN
-F 3 "~" H 8950 10000 50  0001 C CNN
-	1    8950 10000
-	0    1    1    0   
-$EndComp
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX1
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX1
 U 1 1 5ED1A733
 P 4850 1550
 F 0 "MX1" H 4883 1773 60  0000 C CNN
@@ -263,7 +48,7 @@ F 3 "" H 4225 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D3
+L aek2_usb-rescue:D_Small-Device D3
 U 1 1 5ED1C6CB
 P 4700 1800
 F 0 "D3" V 4746 1730 50  0000 R CNN
@@ -276,7 +61,7 @@ $EndComp
 Wire Wire Line
 	4700 1700 4800 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX2
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX2
 U 1 1 5ED246B0
 P 5950 1550
 F 0 "MX2" H 5983 1773 60  0000 C CNN
@@ -287,7 +72,7 @@ F 3 "" H 5325 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D4
+L aek2_usb-rescue:D_Small-Device D4
 U 1 1 5ED246BA
 P 5800 1800
 F 0 "D4" V 5846 1730 50  0000 R CNN
@@ -300,7 +85,7 @@ $EndComp
 Wire Wire Line
 	5800 1700 5900 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX3
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX3
 U 1 1 5ED246C5
 P 6500 1550
 F 0 "MX3" H 6533 1773 60  0000 C CNN
@@ -311,7 +96,7 @@ F 3 "" H 5875 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D5
+L aek2_usb-rescue:D_Small-Device D5
 U 1 1 5ED246CF
 P 6350 1800
 F 0 "D5" V 6396 1730 50  0000 R CNN
@@ -324,7 +109,7 @@ $EndComp
 Wire Wire Line
 	6350 1700 6450 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX4
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX4
 U 1 1 5ED28228
 P 7050 1550
 F 0 "MX4" H 7083 1773 60  0000 C CNN
@@ -335,7 +120,7 @@ F 3 "" H 6425 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D6
+L aek2_usb-rescue:D_Small-Device D6
 U 1 1 5ED28232
 P 6900 1800
 F 0 "D6" V 6946 1730 50  0000 R CNN
@@ -348,7 +133,7 @@ $EndComp
 Wire Wire Line
 	6900 1700 7000 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX5
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX5
 U 1 1 5ED2823D
 P 7600 1550
 F 0 "MX5" H 7633 1773 60  0000 C CNN
@@ -359,7 +144,7 @@ F 3 "" H 6975 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D7
+L aek2_usb-rescue:D_Small-Device D7
 U 1 1 5ED28247
 P 7450 1800
 F 0 "D7" V 7496 1730 50  0000 R CNN
@@ -372,7 +157,7 @@ $EndComp
 Wire Wire Line
 	7450 1700 7550 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX6
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX6
 U 1 1 5ED28252
 P 8150 1550
 F 0 "MX6" H 8183 1773 60  0000 C CNN
@@ -383,7 +168,7 @@ F 3 "" H 7525 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D8
+L aek2_usb-rescue:D_Small-Device D8
 U 1 1 5ED2825C
 P 8000 1800
 F 0 "D8" V 8046 1730 50  0000 R CNN
@@ -396,7 +181,7 @@ $EndComp
 Wire Wire Line
 	8000 1700 8100 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX7
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX7
 U 1 1 5ED28267
 P 8700 1550
 F 0 "MX7" H 8733 1773 60  0000 C CNN
@@ -407,7 +192,7 @@ F 3 "" H 8075 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D9
+L aek2_usb-rescue:D_Small-Device D9
 U 1 1 5ED28271
 P 8550 1800
 F 0 "D9" V 8596 1730 50  0000 R CNN
@@ -420,7 +205,7 @@ $EndComp
 Wire Wire Line
 	8550 1700 8650 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX8
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX8
 U 1 1 5ED2E8D6
 P 9250 1550
 F 0 "MX8" H 9283 1773 60  0000 C CNN
@@ -431,7 +216,7 @@ F 3 "" H 8625 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D10
+L aek2_usb-rescue:D_Small-Device D10
 U 1 1 5ED2E8E0
 P 9100 1800
 F 0 "D10" V 9146 1730 50  0000 R CNN
@@ -444,7 +229,7 @@ $EndComp
 Wire Wire Line
 	9100 1700 9200 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX9
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX9
 U 1 1 5ED2E8EB
 P 9800 1550
 F 0 "MX9" H 9833 1773 60  0000 C CNN
@@ -455,7 +240,7 @@ F 3 "" H 9175 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D11
+L aek2_usb-rescue:D_Small-Device D11
 U 1 1 5ED2E8F5
 P 9650 1800
 F 0 "D11" V 9696 1730 50  0000 R CNN
@@ -468,7 +253,7 @@ $EndComp
 Wire Wire Line
 	9650 1700 9750 1700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX12
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX12
 U 1 1 5ED2E93F
 P 12000 1550
 F 0 "MX12" H 12033 1773 60  0000 C CNN
@@ -479,7 +264,7 @@ F 3 "" H 11375 1525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D14
+L aek2_usb-rescue:D_Small-Device D14
 U 1 1 5ED2E949
 P 11850 1800
 F 0 "D14" V 11896 1730 50  0000 R CNN
@@ -514,7 +299,7 @@ Wire Wire Line
 	9100 1900 9650 1900
 Connection ~ 9650 1900
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX13
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX13
 U 1 1 5ED45F96
 P 4850 2300
 F 0 "MX13" H 4883 2523 60  0000 C CNN
@@ -525,7 +310,7 @@ F 3 "" H 4225 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D15
+L aek2_usb-rescue:D_Small-Device D15
 U 1 1 5ED45FA0
 P 4700 2550
 F 0 "D15" V 4746 2480 50  0000 R CNN
@@ -538,7 +323,7 @@ $EndComp
 Wire Wire Line
 	4700 2450 4800 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX14
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX14
 U 1 1 5ED45FAB
 P 5400 2300
 F 0 "MX14" H 5433 2523 60  0000 C CNN
@@ -549,7 +334,7 @@ F 3 "" H 4775 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D16
+L aek2_usb-rescue:D_Small-Device D16
 U 1 1 5ED45FB5
 P 5250 2550
 F 0 "D16" V 5296 2480 50  0000 R CNN
@@ -562,7 +347,7 @@ $EndComp
 Wire Wire Line
 	5250 2450 5350 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX15
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX15
 U 1 1 5ED45FC0
 P 5950 2300
 F 0 "MX15" H 5983 2523 60  0000 C CNN
@@ -573,7 +358,7 @@ F 3 "" H 5325 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D17
+L aek2_usb-rescue:D_Small-Device D17
 U 1 1 5ED45FCA
 P 5800 2550
 F 0 "D17" V 5846 2480 50  0000 R CNN
@@ -586,7 +371,7 @@ $EndComp
 Wire Wire Line
 	5800 2450 5900 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX16
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX16
 U 1 1 5ED45FD5
 P 6500 2300
 F 0 "MX16" H 6533 2523 60  0000 C CNN
@@ -597,7 +382,7 @@ F 3 "" H 5875 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D18
+L aek2_usb-rescue:D_Small-Device D18
 U 1 1 5ED45FDF
 P 6350 2550
 F 0 "D18" V 6396 2480 50  0000 R CNN
@@ -610,7 +395,7 @@ $EndComp
 Wire Wire Line
 	6350 2450 6450 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX17
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX17
 U 1 1 5ED45FEA
 P 7050 2300
 F 0 "MX17" H 7083 2523 60  0000 C CNN
@@ -621,7 +406,7 @@ F 3 "" H 6425 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D19
+L aek2_usb-rescue:D_Small-Device D19
 U 1 1 5ED45FF4
 P 6900 2550
 F 0 "D19" V 6946 2480 50  0000 R CNN
@@ -634,7 +419,7 @@ $EndComp
 Wire Wire Line
 	6900 2450 7000 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX18
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX18
 U 1 1 5ED45FFF
 P 7600 2300
 F 0 "MX18" H 7633 2523 60  0000 C CNN
@@ -645,7 +430,7 @@ F 3 "" H 6975 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D20
+L aek2_usb-rescue:D_Small-Device D20
 U 1 1 5ED46009
 P 7450 2550
 F 0 "D20" V 7496 2480 50  0000 R CNN
@@ -658,7 +443,7 @@ $EndComp
 Wire Wire Line
 	7450 2450 7550 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX19
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX19
 U 1 1 5ED46014
 P 8150 2300
 F 0 "MX19" H 8183 2523 60  0000 C CNN
@@ -669,7 +454,7 @@ F 3 "" H 7525 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D21
+L aek2_usb-rescue:D_Small-Device D21
 U 1 1 5ED4601E
 P 8000 2550
 F 0 "D21" V 8046 2480 50  0000 R CNN
@@ -682,7 +467,7 @@ $EndComp
 Wire Wire Line
 	8000 2450 8100 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX20
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX20
 U 1 1 5ED46029
 P 8700 2300
 F 0 "MX20" H 8733 2523 60  0000 C CNN
@@ -693,7 +478,7 @@ F 3 "" H 8075 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D22
+L aek2_usb-rescue:D_Small-Device D22
 U 1 1 5ED46033
 P 8550 2550
 F 0 "D22" V 8596 2480 50  0000 R CNN
@@ -706,7 +491,7 @@ $EndComp
 Wire Wire Line
 	8550 2450 8650 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX21
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX21
 U 1 1 5ED4603E
 P 9250 2300
 F 0 "MX21" H 9283 2523 60  0000 C CNN
@@ -717,7 +502,7 @@ F 3 "" H 8625 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D23
+L aek2_usb-rescue:D_Small-Device D23
 U 1 1 5ED46048
 P 9100 2550
 F 0 "D23" V 9146 2480 50  0000 R CNN
@@ -730,7 +515,7 @@ $EndComp
 Wire Wire Line
 	9100 2450 9200 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX22
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX22
 U 1 1 5ED46053
 P 9800 2300
 F 0 "MX22" H 9833 2523 60  0000 C CNN
@@ -741,7 +526,7 @@ F 3 "" H 9175 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D24
+L aek2_usb-rescue:D_Small-Device D24
 U 1 1 5ED4605D
 P 9650 2550
 F 0 "D24" V 9696 2480 50  0000 R CNN
@@ -754,7 +539,7 @@ $EndComp
 Wire Wire Line
 	9650 2450 9750 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX23
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX23
 U 1 1 5ED46068
 P 10350 2300
 F 0 "MX23" H 10383 2523 60  0000 C CNN
@@ -765,7 +550,7 @@ F 3 "" H 9725 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D25
+L aek2_usb-rescue:D_Small-Device D25
 U 1 1 5ED46072
 P 10200 2550
 F 0 "D25" V 10246 2480 50  0000 R CNN
@@ -778,7 +563,7 @@ $EndComp
 Wire Wire Line
 	10200 2450 10300 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX24
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX24
 U 1 1 5ED4607D
 P 10900 2300
 F 0 "MX24" H 10933 2523 60  0000 C CNN
@@ -789,7 +574,7 @@ F 3 "" H 10275 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D26
+L aek2_usb-rescue:D_Small-Device D26
 U 1 1 5ED46087
 P 10750 2550
 F 0 "D26" V 10796 2480 50  0000 R CNN
@@ -802,7 +587,7 @@ $EndComp
 Wire Wire Line
 	10750 2450 10850 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX25
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX25
 U 1 1 5ED46092
 P 11450 2300
 F 0 "MX25" H 11483 2523 60  0000 C CNN
@@ -813,7 +598,7 @@ F 3 "" H 10825 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D27
+L aek2_usb-rescue:D_Small-Device D27
 U 1 1 5ED4609C
 P 11300 2550
 F 0 "D27" V 11346 2480 50  0000 R CNN
@@ -826,7 +611,7 @@ $EndComp
 Wire Wire Line
 	11300 2450 11400 2450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX26
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX26
 U 1 1 5ED460A7
 P 12000 2300
 F 0 "MX26" H 12033 2523 60  0000 C CNN
@@ -837,7 +622,7 @@ F 3 "" H 11375 2275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D28
+L aek2_usb-rescue:D_Small-Device D28
 U 1 1 5ED460B1
 P 11850 2550
 F 0 "D28" V 11896 2480 50  0000 R CNN
@@ -888,7 +673,7 @@ Connection ~ 11300 2650
 Wire Wire Line
 	11300 2650 11850 2650
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX27
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX27
 U 1 1 5ED5A7B5
 P 4850 3050
 F 0 "MX27" H 4883 3273 60  0000 C CNN
@@ -899,7 +684,7 @@ F 3 "" H 4225 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D29
+L aek2_usb-rescue:D_Small-Device D29
 U 1 1 5ED5A7BF
 P 4700 3300
 F 0 "D29" V 4746 3230 50  0000 R CNN
@@ -912,7 +697,7 @@ $EndComp
 Wire Wire Line
 	4700 3200 4800 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX28
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX28
 U 1 1 5ED5A7CA
 P 5400 3050
 F 0 "MX28" H 5433 3273 60  0000 C CNN
@@ -923,7 +708,7 @@ F 3 "" H 4775 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D30
+L aek2_usb-rescue:D_Small-Device D30
 U 1 1 5ED5A7D4
 P 5250 3300
 F 0 "D30" V 5296 3230 50  0000 R CNN
@@ -936,7 +721,7 @@ $EndComp
 Wire Wire Line
 	5250 3200 5350 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX29
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX29
 U 1 1 5ED5A7DF
 P 5950 3050
 F 0 "MX29" H 5983 3273 60  0000 C CNN
@@ -947,7 +732,7 @@ F 3 "" H 5325 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D31
+L aek2_usb-rescue:D_Small-Device D31
 U 1 1 5ED5A7E9
 P 5800 3300
 F 0 "D31" V 5846 3230 50  0000 R CNN
@@ -960,7 +745,7 @@ $EndComp
 Wire Wire Line
 	5800 3200 5900 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX30
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX30
 U 1 1 5ED5A7F4
 P 6500 3050
 F 0 "MX30" H 6533 3273 60  0000 C CNN
@@ -971,7 +756,7 @@ F 3 "" H 5875 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D32
+L aek2_usb-rescue:D_Small-Device D32
 U 1 1 5ED5A7FE
 P 6350 3300
 F 0 "D32" V 6396 3230 50  0000 R CNN
@@ -984,7 +769,7 @@ $EndComp
 Wire Wire Line
 	6350 3200 6450 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX31
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX31
 U 1 1 5ED5A809
 P 7050 3050
 F 0 "MX31" H 7083 3273 60  0000 C CNN
@@ -995,7 +780,7 @@ F 3 "" H 6425 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D33
+L aek2_usb-rescue:D_Small-Device D33
 U 1 1 5ED5A813
 P 6900 3300
 F 0 "D33" V 6946 3230 50  0000 R CNN
@@ -1008,7 +793,7 @@ $EndComp
 Wire Wire Line
 	6900 3200 7000 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX32
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX32
 U 1 1 5ED5A81E
 P 7600 3050
 F 0 "MX32" H 7633 3273 60  0000 C CNN
@@ -1019,7 +804,7 @@ F 3 "" H 6975 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D34
+L aek2_usb-rescue:D_Small-Device D34
 U 1 1 5ED5A828
 P 7450 3300
 F 0 "D34" V 7496 3230 50  0000 R CNN
@@ -1032,7 +817,7 @@ $EndComp
 Wire Wire Line
 	7450 3200 7550 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX33
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX33
 U 1 1 5ED5A833
 P 8150 3050
 F 0 "MX33" H 8183 3273 60  0000 C CNN
@@ -1043,7 +828,7 @@ F 3 "" H 7525 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D35
+L aek2_usb-rescue:D_Small-Device D35
 U 1 1 5ED5A83D
 P 8000 3300
 F 0 "D35" V 8046 3230 50  0000 R CNN
@@ -1056,7 +841,7 @@ $EndComp
 Wire Wire Line
 	8000 3200 8100 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX34
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX34
 U 1 1 5ED5A848
 P 8700 3050
 F 0 "MX34" H 8733 3273 60  0000 C CNN
@@ -1067,7 +852,7 @@ F 3 "" H 8075 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D36
+L aek2_usb-rescue:D_Small-Device D36
 U 1 1 5ED5A852
 P 8550 3300
 F 0 "D36" V 8596 3230 50  0000 R CNN
@@ -1080,7 +865,7 @@ $EndComp
 Wire Wire Line
 	8550 3200 8650 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX35
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX35
 U 1 1 5ED5A85D
 P 9250 3050
 F 0 "MX35" H 9283 3273 60  0000 C CNN
@@ -1091,7 +876,7 @@ F 3 "" H 8625 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D37
+L aek2_usb-rescue:D_Small-Device D37
 U 1 1 5ED5A867
 P 9100 3300
 F 0 "D37" V 9146 3230 50  0000 R CNN
@@ -1104,7 +889,7 @@ $EndComp
 Wire Wire Line
 	9100 3200 9200 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX36
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX36
 U 1 1 5ED5A872
 P 9800 3050
 F 0 "MX36" H 9833 3273 60  0000 C CNN
@@ -1115,7 +900,7 @@ F 3 "" H 9175 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D38
+L aek2_usb-rescue:D_Small-Device D38
 U 1 1 5ED5A87C
 P 9650 3300
 F 0 "D38" V 9696 3230 50  0000 R CNN
@@ -1128,7 +913,7 @@ $EndComp
 Wire Wire Line
 	9650 3200 9750 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX37
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX37
 U 1 1 5ED5A887
 P 10350 3050
 F 0 "MX37" H 10383 3273 60  0000 C CNN
@@ -1139,7 +924,7 @@ F 3 "" H 9725 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D39
+L aek2_usb-rescue:D_Small-Device D39
 U 1 1 5ED5A891
 P 10200 3300
 F 0 "D39" V 10246 3230 50  0000 R CNN
@@ -1152,7 +937,7 @@ $EndComp
 Wire Wire Line
 	10200 3200 10300 3200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX38
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX38
 U 1 1 5ED5A89C
 P 10900 3050
 F 0 "MX38" H 10933 3273 60  0000 C CNN
@@ -1163,7 +948,7 @@ F 3 "" H 10275 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D40
+L aek2_usb-rescue:D_Small-Device D40
 U 1 1 5ED5A8A6
 P 10750 3300
 F 0 "D40" V 10796 3230 50  0000 R CNN
@@ -1209,7 +994,7 @@ Wire Wire Line
 	10200 3400 10750 3400
 Connection ~ 10750 3400
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX41
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX41
 U 1 1 5ED5A950
 P 4850 3800
 F 0 "MX41" H 4883 4023 60  0000 C CNN
@@ -1220,7 +1005,7 @@ F 3 "" H 4225 3775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D43
+L aek2_usb-rescue:D_Small-Device D43
 U 1 1 5ED5A95A
 P 4700 4050
 F 0 "D43" V 4746 3980 50  0000 R CNN
@@ -1233,7 +1018,7 @@ $EndComp
 Wire Wire Line
 	4700 3950 4800 3950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX54
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX54
 U 1 1 5ED5AA61
 P 12000 3800
 F 0 "MX54" H 12033 4023 60  0000 C CNN
@@ -1244,7 +1029,7 @@ F 3 "" H 11375 3775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D56
+L aek2_usb-rescue:D_Small-Device D56
 U 1 1 5ED5AA6B
 P 11850 4050
 F 0 "D56" V 11896 3980 50  0000 R CNN
@@ -1257,7 +1042,7 @@ $EndComp
 Wire Wire Line
 	11850 3950 11950 3950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX55
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX55
 U 1 1 5EDA7B08
 P 4850 4550
 F 0 "MX55" H 4883 4773 60  0000 C CNN
@@ -1268,7 +1053,7 @@ F 3 "" H 4225 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D57
+L aek2_usb-rescue:D_Small-Device D57
 U 1 1 5EDA7B12
 P 4700 4800
 F 0 "D57" V 4746 4730 50  0000 R CNN
@@ -1281,7 +1066,7 @@ $EndComp
 Wire Wire Line
 	4700 4700 4800 4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX56
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX56
 U 1 1 5EDA7B1D
 P 5400 4550
 F 0 "MX56" H 5433 4773 60  0000 C CNN
@@ -1292,7 +1077,7 @@ F 3 "" H 4775 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D58
+L aek2_usb-rescue:D_Small-Device D58
 U 1 1 5EDA7B27
 P 5250 4800
 F 0 "D58" V 5296 4730 50  0000 R CNN
@@ -1305,7 +1090,7 @@ $EndComp
 Wire Wire Line
 	5250 4700 5350 4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX57
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX57
 U 1 1 5EDA7B32
 P 5950 4550
 F 0 "MX57" H 5983 4773 60  0000 C CNN
@@ -1316,7 +1101,7 @@ F 3 "" H 5325 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D59
+L aek2_usb-rescue:D_Small-Device D59
 U 1 1 5EDA7B3C
 P 5800 4800
 F 0 "D59" V 5846 4730 50  0000 R CNN
@@ -1329,7 +1114,7 @@ $EndComp
 Wire Wire Line
 	5800 4700 5900 4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX58
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX58
 U 1 1 5EDA7B47
 P 6500 4550
 F 0 "MX58" H 6533 4773 60  0000 C CNN
@@ -1340,7 +1125,7 @@ F 3 "" H 5875 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D60
+L aek2_usb-rescue:D_Small-Device D60
 U 1 1 5EDA7B51
 P 6350 4800
 F 0 "D60" V 6396 4730 50  0000 R CNN
@@ -1353,7 +1138,7 @@ $EndComp
 Wire Wire Line
 	6350 4700 6450 4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX63
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX63
 U 1 1 5EDA7BC5
 P 9250 4550
 F 0 "MX63" H 9283 4773 60  0000 C CNN
@@ -1364,7 +1149,7 @@ F 3 "" H 8625 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D65
+L aek2_usb-rescue:D_Small-Device D65
 U 1 1 5EDA7BCF
 P 9100 4800
 F 0 "D65" V 9146 4730 50  0000 R CNN
@@ -1377,7 +1162,7 @@ $EndComp
 Wire Wire Line
 	9100 4700 9200 4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX64
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX64
 U 1 1 5EDA7BDA
 P 9800 4550
 F 0 "MX64" H 9833 4773 60  0000 C CNN
@@ -1388,7 +1173,7 @@ F 3 "" H 9175 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D66
+L aek2_usb-rescue:D_Small-Device D66
 U 1 1 5EDA7BE4
 P 9650 4800
 F 0 "D66" V 9696 4730 50  0000 R CNN
@@ -1401,7 +1186,7 @@ $EndComp
 Wire Wire Line
 	9650 4700 9750 4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX65
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX65
 U 1 1 5EDA7BEF
 P 10350 4550
 F 0 "MX65" H 10383 4773 60  0000 C CNN
@@ -1412,7 +1197,7 @@ F 3 "" H 9725 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D67
+L aek2_usb-rescue:D_Small-Device D67
 U 1 1 5EDA7BF9
 P 10200 4800
 F 0 "D67" V 10246 4730 50  0000 R CNN
@@ -1425,7 +1210,7 @@ $EndComp
 Wire Wire Line
 	10200 4700 10300 4700
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX66
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX66
 U 1 1 5EDA7C19
 P 12000 4550
 F 0 "MX66" H 12033 4773 60  0000 C CNN
@@ -1436,7 +1221,7 @@ F 3 "" H 11375 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D68
+L aek2_usb-rescue:D_Small-Device D68
 U 1 1 5EDA7C23
 P 11850 4800
 F 0 "D68" V 11896 4730 50  0000 R CNN
@@ -1457,7 +1242,7 @@ Wire Wire Line
 	6350 4900 6900 4900
 Connection ~ 8550 4900
 $Comp
-L Device:D_Small D64
+L aek2_usb-rescue:D_Small-Device D64
 U 1 1 5EDA7BA5
 P 8550 4800
 F 0 "D64" V 8596 4730 50  0000 R CNN
@@ -1468,7 +1253,7 @@ F 3 "~" V 8550 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX62
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX62
 U 1 1 5EDA7B9B
 P 8700 4550
 F 0 "MX62" H 8733 4773 60  0000 C CNN
@@ -1481,7 +1266,7 @@ $EndComp
 Wire Wire Line
 	8550 4900 9100 4900
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX60
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX60
 U 1 1 5EE5B1F0
 P 7600 4550
 F 0 "MX60" H 7633 4773 60  0000 C CNN
@@ -1492,7 +1277,7 @@ F 3 "" H 6975 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D62
+L aek2_usb-rescue:D_Small-Device D62
 U 1 1 5EE5B1FA
 P 7450 4800
 F 0 "D62" V 7496 4730 50  0000 R CNN
@@ -1602,7 +1387,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 3950 5350 3950
 $Comp
-L Device:D_Small D44
+L aek2_usb-rescue:D_Small-Device D44
 U 1 1 5ED5A984
 P 5250 4050
 F 0 "D44" V 5296 3980 50  0000 R CNN
@@ -1613,7 +1398,7 @@ F 3 "~" V 5250 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX42
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX42
 U 1 1 5ED5A97A
 P 5400 3800
 F 0 "MX42" H 5433 4023 60  0000 C CNN
@@ -1626,7 +1411,7 @@ $EndComp
 Wire Wire Line
 	5800 3950 5900 3950
 $Comp
-L Device:D_Small D45
+L aek2_usb-rescue:D_Small-Device D45
 U 1 1 5ED5A999
 P 5800 4050
 F 0 "D45" V 5846 3980 50  0000 R CNN
@@ -1639,7 +1424,7 @@ $EndComp
 Wire Wire Line
 	6350 3950 6450 3950
 $Comp
-L Device:D_Small D46
+L aek2_usb-rescue:D_Small-Device D46
 U 1 1 5ED5A9AE
 P 6350 4050
 F 0 "D46" V 6396 3980 50  0000 R CNN
@@ -1650,7 +1435,7 @@ F 3 "~" V 6350 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX44
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX44
 U 1 1 5ED5A9A4
 P 6500 3800
 F 0 "MX44" H 6533 4023 60  0000 C CNN
@@ -1663,7 +1448,7 @@ $EndComp
 Wire Wire Line
 	6900 3950 7000 3950
 $Comp
-L Device:D_Small D47
+L aek2_usb-rescue:D_Small-Device D47
 U 1 1 5ED5A9C3
 P 6900 4050
 F 0 "D47" V 6946 3980 50  0000 R CNN
@@ -1674,7 +1459,7 @@ F 3 "~" V 6900 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX45
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX45
 U 1 1 5ED5A9B9
 P 7050 3800
 F 0 "MX45" H 7083 4023 60  0000 C CNN
@@ -1687,7 +1472,7 @@ $EndComp
 Wire Wire Line
 	7450 3950 7550 3950
 $Comp
-L Device:D_Small D48
+L aek2_usb-rescue:D_Small-Device D48
 U 1 1 5ED5A9D8
 P 7450 4050
 F 0 "D48" V 7496 3980 50  0000 R CNN
@@ -1698,7 +1483,7 @@ F 3 "~" V 7450 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX46
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX46
 U 1 1 5ED5A9CE
 P 7600 3800
 F 0 "MX46" H 7633 4023 60  0000 C CNN
@@ -1711,7 +1496,7 @@ $EndComp
 Wire Wire Line
 	8000 3950 8100 3950
 $Comp
-L Device:D_Small D49
+L aek2_usb-rescue:D_Small-Device D49
 U 1 1 5ED5A9ED
 P 8000 4050
 F 0 "D49" V 8046 3980 50  0000 R CNN
@@ -1722,7 +1507,7 @@ F 3 "~" V 8000 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX47
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX47
 U 1 1 5ED5A9E3
 P 8150 3800
 F 0 "MX47" H 8183 4023 60  0000 C CNN
@@ -1735,7 +1520,7 @@ $EndComp
 Wire Wire Line
 	8550 3950 8650 3950
 $Comp
-L Device:D_Small D50
+L aek2_usb-rescue:D_Small-Device D50
 U 1 1 5ED5AA02
 P 8550 4050
 F 0 "D50" V 8596 3980 50  0000 R CNN
@@ -1746,7 +1531,7 @@ F 3 "~" V 8550 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX48
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX48
 U 1 1 5ED5A9F8
 P 8700 3800
 F 0 "MX48" H 8733 4023 60  0000 C CNN
@@ -1759,7 +1544,7 @@ $EndComp
 Wire Wire Line
 	9100 3950 9200 3950
 $Comp
-L Device:D_Small D51
+L aek2_usb-rescue:D_Small-Device D51
 U 1 1 5ED5AA17
 P 9100 4050
 F 0 "D51" V 9146 3980 50  0000 R CNN
@@ -1770,7 +1555,7 @@ F 3 "~" V 9100 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX49
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX49
 U 1 1 5ED5AA0D
 P 9250 3800
 F 0 "MX49" H 9283 4023 60  0000 C CNN
@@ -1783,7 +1568,7 @@ $EndComp
 Wire Wire Line
 	9650 3950 9750 3950
 $Comp
-L Device:D_Small D52
+L aek2_usb-rescue:D_Small-Device D52
 U 1 1 5ED5AA2C
 P 9650 4050
 F 0 "D52" V 9696 3980 50  0000 R CNN
@@ -1794,7 +1579,7 @@ F 3 "~" V 9650 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX50
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX50
 U 1 1 5ED5AA22
 P 9800 3800
 F 0 "MX50" H 9833 4023 60  0000 C CNN
@@ -1807,7 +1592,7 @@ $EndComp
 Wire Wire Line
 	10200 3950 10300 3950
 $Comp
-L Device:D_Small D53
+L aek2_usb-rescue:D_Small-Device D53
 U 1 1 5ED5AA41
 P 10200 4050
 F 0 "D53" V 10246 3980 50  0000 R CNN
@@ -1818,7 +1603,7 @@ F 3 "~" V 10200 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX51
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX51
 U 1 1 5ED5AA37
 P 10350 3800
 F 0 "MX51" H 10383 4023 60  0000 C CNN
@@ -1899,50 +1684,6 @@ Wire Wire Line
 Wire Wire Line
 	10200 4150 10750 4150
 Connection ~ 10200 4900
-$Comp
-L power:+5V #PWR07
-U 1 1 5F7DE269
-P 9200 9800
-F 0 "#PWR07" H 9200 9650 50  0001 C CNN
-F 1 "+5V" H 9215 9973 50  0000 C CNN
-F 2 "" H 9200 9800 50  0001 C CNN
-F 3 "" H 9200 9800 50  0001 C CNN
-	1    9200 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 5F7DE8E8
-P 9200 10700
-F 0 "#PWR015" H 9200 10450 50  0001 C CNN
-F 1 "GND" H 9205 10527 50  0000 C CNN
-F 2 "" H 9200 10700 50  0001 C CNN
-F 3 "" H 9200 10700 50  0001 C CNN
-	1    9200 10700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5EC4799A
-P 9850 10200
-F 0 "R3" V 9750 10200 50  0000 C CNN
-F 1 "68R" V 9850 10200 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9780 10200 50  0001 C CNN
-F 3 "~" H 9850 10200 50  0001 C CNN
-	1    9850 10200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5EC46F28
-P 9850 10100
-F 0 "R2" V 9950 10100 50  0000 C CNN
-F 1 "68R" V 9850 10100 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9780 10100 50  0001 C CNN
-F 3 "~" H 9850 10100 50  0001 C CNN
-	1    9850 10100
-	0    -1   -1   0   
-$EndComp
 Text GLabel 1250 8750 1    50   Input ~ 0
 col1
 Text GLabel 6100 1500 1    50   Input ~ 0
@@ -2013,104 +1754,12 @@ Text GLabel 3950 8750 1    50   Input ~ 0
 row3
 Text GLabel 3350 8750 1    50   Input ~ 0
 row4
-Text GLabel 11450 10350 2    50   Input ~ 0
-MOSI
-Text GLabel 11450 10250 2    50   Input ~ 0
-MISO
-Text GLabel 11450 10450 2    50   Input ~ 0
-SCK
-Text GLabel 11450 10550 2    50   Input ~ 0
-reset
-$Comp
-L power:+5V #PWR08
-U 1 1 5FBF5C46
-P 10950 9950
-F 0 "#PWR08" H 10950 9800 50  0001 C CNN
-F 1 "+5V" H 10965 10123 50  0000 C CNN
-F 2 "" H 10950 9950 50  0001 C CNN
-F 3 "" H 10950 9950 50  0001 C CNN
-	1    10950 9950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 5FBF656D
-P 10950 10850
-F 0 "#PWR022" H 10950 10600 50  0001 C CNN
-F 1 "GND" H 10955 10677 50  0000 C CNN
-F 2 "" H 10950 10850 50  0001 C CNN
-F 3 "" H 10950 10850 50  0001 C CNN
-	1    10950 10850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	800  9350 900  9350
 Wire Wire Line
 	4950 9350 5000 9350
 Wire Wire Line
 	5000 9350 5000 9700
-Wire Wire Line
-	1400 10200 1400 10450
-Wire Wire Line
-	1700 10200 1700 10450
-Wire Wire Line
-	9100 10000 9200 10000
-Wire Wire Line
-	9600 10000 9600 10200
-Connection ~ 9600 10200
-Wire Wire Line
-	9600 10200 9700 10200
-Wire Wire Line
-	9200 9800 9200 10000
-Connection ~ 9200 10000
-Wire Wire Line
-	9200 10000 9300 10000
-Wire Wire Line
-	9200 10300 9200 10100
-Connection ~ 9200 10100
-Wire Wire Line
-	9200 10100 9700 10100
-Wire Wire Line
-	9350 10300 9350 10200
-Connection ~ 9350 10200
-Wire Wire Line
-	9350 10200 9600 10200
-Wire Wire Line
-	9350 10700 9350 10600
-Wire Wire Line
-	9200 10700 9200 10600
-Wire Wire Line
-	9200 10700 9350 10700
-Wire Wire Line
-	8650 10100 9200 10100
-Wire Wire Line
-	8650 10200 9350 10200
-Wire Wire Line
-	1400 10450 1400 10600
-Connection ~ 1400 10450
-Wire Wire Line
-	1700 10450 1700 10600
-Connection ~ 1700 10450
-Wire Wire Line
-	1400 10800 1550 10800
-Connection ~ 1550 10800
-Wire Wire Line
-	1550 10800 1700 10800
 $Comp
-L power:VCC #PWR09
-U 1 1 5EE56FF8
-P 8700 10000
-F 0 "#PWR09" H 8700 9850 50  0001 C CNN
-F 1 "VCC" H 8717 10173 50  0000 C CNN
-F 2 "" H 8700 10000 50  0001 C CNN
-F 3 "" H 8700 10000 50  0001 C CNN
-	1    8700 10000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8700 10000 8800 10000
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX59
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX59
 U 1 1 5F153051
 P 7050 4550
 F 0 "MX59" H 7083 4773 60  0000 C CNN
@@ -2121,7 +1770,7 @@ F 3 "" H 6425 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D61
+L aek2_usb-rescue:D_Small-Device D61
 U 1 1 5F15305B
 P 6900 4800
 F 0 "D61" V 6946 4730 50  0000 R CNN
@@ -2140,7 +1789,7 @@ Wire Wire Line
 	6900 4900 7450 4900
 Connection ~ 7200 3750
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX61
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX61
 U 1 1 5F16C9DA
 P 8150 4550
 F 0 "MX61" H 8183 4773 60  0000 C CNN
@@ -2151,7 +1800,7 @@ F 3 "" H 7525 4525 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D63
+L aek2_usb-rescue:D_Small-Device D63
 U 1 1 5F16C9E4
 P 8000 4800
 F 0 "D63" V 8046 4730 50  0000 R CNN
@@ -2172,7 +1821,7 @@ Connection ~ 8300 3750
 Wire Wire Line
 	10750 3950 10850 3950
 $Comp
-L Device:D_Small D54
+L aek2_usb-rescue:D_Small-Device D54
 U 1 1 5F186C13
 P 10750 4050
 F 0 "D54" V 10796 3980 50  0000 R CNN
@@ -2183,7 +1832,7 @@ F 3 "~" V 10750 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX52
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX52
 U 1 1 5F186C1D
 P 10900 3800
 F 0 "MX52" H 10933 4023 60  0000 C CNN
@@ -2198,7 +1847,7 @@ Connection ~ 10750 4150
 Wire Wire Line
 	10750 4150 11300 4150
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX39
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX39
 U 1 1 5F1A4A67
 P 11450 3050
 F 0 "MX39" H 11483 3273 60  0000 C CNN
@@ -2209,7 +1858,7 @@ F 3 "" H 10825 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D41
+L aek2_usb-rescue:D_Small-Device D41
 U 1 1 5F1A4A71
 P 11300 3300
 F 0 "D41" V 11346 3230 50  0000 R CNN
@@ -2232,7 +1881,7 @@ Wire Wire Line
 Wire Wire Line
 	11300 3950 11400 3950
 $Comp
-L Device:D_Small D55
+L aek2_usb-rescue:D_Small-Device D55
 U 1 1 5F1A4A83
 P 11300 4050
 F 0 "D55" V 11346 3980 50  0000 R CNN
@@ -2243,7 +1892,7 @@ F 3 "~" V 11300 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX53
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX53
 U 1 1 5F1A4A8D
 P 11450 3800
 F 0 "MX53" H 11483 4023 60  0000 C CNN
@@ -2259,7 +1908,7 @@ Wire Wire Line
 Connection ~ 11600 2250
 Connection ~ 11600 3750
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX40
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX40
 U 1 1 5F1FCB42
 P 12000 3050
 F 0 "MX40" H 12033 3273 60  0000 C CNN
@@ -2270,7 +1919,7 @@ F 3 "" H 11375 3025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D42
+L aek2_usb-rescue:D_Small-Device D42
 U 1 1 5F1FCB4C
 P 11850 3300
 F 0 "D42" V 11896 3230 50  0000 R CNN
@@ -2286,7 +1935,7 @@ Connection ~ 12150 3000
 Wire Wire Line
 	12150 3000 12150 3750
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX67
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX67
 U 1 1 5F2AF0AA
 P 4850 5300
 F 0 "MX67" H 4883 5523 60  0000 C CNN
@@ -2297,7 +1946,7 @@ F 3 "" H 4225 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D69
+L aek2_usb-rescue:D_Small-Device D69
 U 1 1 5F2AF0B4
 P 4700 5550
 F 0 "D69" V 4746 5480 50  0000 R CNN
@@ -2310,7 +1959,7 @@ $EndComp
 Wire Wire Line
 	4700 5450 4800 5450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX68
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX68
 U 1 1 5F2AF0BF
 P 5400 5300
 F 0 "MX68" H 5433 5523 60  0000 C CNN
@@ -2321,7 +1970,7 @@ F 3 "" H 4775 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D70
+L aek2_usb-rescue:D_Small-Device D70
 U 1 1 5F2AF0C9
 P 5250 5550
 F 0 "D70" V 5296 5480 50  0000 R CNN
@@ -2334,7 +1983,7 @@ $EndComp
 Wire Wire Line
 	5250 5450 5350 5450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX69
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX69
 U 1 1 5F2AF0D4
 P 5950 5300
 F 0 "MX69" H 5983 5523 60  0000 C CNN
@@ -2345,7 +1994,7 @@ F 3 "" H 5325 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D71
+L aek2_usb-rescue:D_Small-Device D71
 U 1 1 5F2AF0DE
 P 5800 5550
 F 0 "D71" V 5846 5480 50  0000 R CNN
@@ -2358,7 +2007,7 @@ $EndComp
 Wire Wire Line
 	5800 5450 5900 5450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX75
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX75
 U 1 1 5F2AF128
 P 10350 5300
 F 0 "MX75" H 10383 5523 60  0000 C CNN
@@ -2369,7 +2018,7 @@ F 3 "" H 9725 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D77
+L aek2_usb-rescue:D_Small-Device D77
 U 1 1 5F2AF132
 P 10200 5550
 F 0 "D77" V 10246 5480 50  0000 R CNN
@@ -2382,7 +2031,7 @@ $EndComp
 Wire Wire Line
 	10200 5450 10300 5450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX76
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX76
 U 1 1 5F2AF13D
 P 10900 5300
 F 0 "MX76" H 10933 5523 60  0000 C CNN
@@ -2393,7 +2042,7 @@ F 3 "" H 10275 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D78
+L aek2_usb-rescue:D_Small-Device D78
 U 1 1 5F2AF147
 P 10750 5550
 F 0 "D78" V 10796 5480 50  0000 R CNN
@@ -2406,7 +2055,7 @@ $EndComp
 Wire Wire Line
 	10750 5450 10850 5450
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX77
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX77
 U 1 1 5F2AF152
 P 12000 5300
 F 0 "MX77" H 12033 5523 60  0000 C CNN
@@ -2417,7 +2066,7 @@ F 3 "" H 11375 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D79
+L aek2_usb-rescue:D_Small-Device D79
 U 1 1 5F2AF15C
 P 11850 5550
 F 0 "D79" V 11896 5480 50  0000 R CNN
@@ -2436,7 +2085,7 @@ Wire Wire Line
 	5250 5650 5800 5650
 Connection ~ 5800 5650
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX70
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX70
 U 1 1 5F2AF1CA
 P 7600 5300
 F 0 "MX70" H 7633 5523 60  0000 C CNN
@@ -2447,7 +2096,7 @@ F 3 "" H 6975 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D72
+L aek2_usb-rescue:D_Small-Device D72
 U 1 1 5F2AF1D4
 P 7450 5550
 F 0 "D72" V 7496 5480 50  0000 R CNN
@@ -2475,7 +2124,7 @@ Connection ~ 10750 5650
 Text GLabel 4700 5650 0    50   Input ~ 0
 row5
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX73
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX73
 U 1 1 5F2AF20F
 P 9250 5300
 F 0 "MX73" H 9283 5523 60  0000 C CNN
@@ -2486,7 +2135,7 @@ F 3 "" H 8625 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D75
+L aek2_usb-rescue:D_Small-Device D75
 U 1 1 5F2AF219
 P 9100 5550
 F 0 "D75" V 9146 5480 50  0000 R CNN
@@ -2508,7 +2157,7 @@ Connection ~ 9400 4500
 Connection ~ 9950 4500
 Connection ~ 12150 4500
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX105
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX105
 U 1 1 5F2EDF85
 P 12000 6800
 F 0 "MX105" H 12033 7023 60  0000 C CNN
@@ -2519,7 +2168,7 @@ F 3 "" H 11375 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D107
+L aek2_usb-rescue:D_Small-Device D107
 U 1 1 5F2EDF8F
 P 11850 7050
 F 0 "D107" V 11896 6980 50  0000 R CNN
@@ -2532,7 +2181,7 @@ $EndComp
 Wire Wire Line
 	11850 6950 11950 6950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX91
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX91
 U 1 1 5F2EDF9A
 P 12000 6050
 F 0 "MX91" H 12033 6273 60  0000 C CNN
@@ -2543,7 +2192,7 @@ F 3 "" H 11375 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D93
+L aek2_usb-rescue:D_Small-Device D93
 U 1 1 5F2EDFA4
 P 11850 6300
 F 0 "D93" V 11896 6230 50  0000 R CNN
@@ -2556,7 +2205,7 @@ $EndComp
 Wire Wire Line
 	11850 6200 11950 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX90
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX90
 U 1 1 5F2EDFAF
 P 11450 6050
 F 0 "MX90" H 11483 6273 60  0000 C CNN
@@ -2567,7 +2216,7 @@ F 3 "" H 10825 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D92
+L aek2_usb-rescue:D_Small-Device D92
 U 1 1 5F2EDFB9
 P 11300 6300
 F 0 "D92" V 11346 6230 50  0000 R CNN
@@ -2580,7 +2229,7 @@ $EndComp
 Wire Wire Line
 	11300 6200 11400 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX84
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX84
 U 1 1 5F2EDFC4
 P 8150 6050
 F 0 "MX84" H 8183 6273 60  0000 C CNN
@@ -2591,7 +2240,7 @@ F 3 "" H 7525 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D86
+L aek2_usb-rescue:D_Small-Device D86
 U 1 1 5F2EDFCE
 P 8000 6300
 F 0 "D86" V 8046 6230 50  0000 R CNN
@@ -2604,7 +2253,7 @@ $EndComp
 Wire Wire Line
 	8000 6200 8100 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX79
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX79
 U 1 1 5F2EDFD9
 P 5400 6050
 F 0 "MX79" H 5433 6273 60  0000 C CNN
@@ -2615,7 +2264,7 @@ F 3 "" H 4775 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D81
+L aek2_usb-rescue:D_Small-Device D81
 U 1 1 5F2EDFE3
 P 5250 6300
 F 0 "D81" V 5296 6230 50  0000 R CNN
@@ -2628,7 +2277,7 @@ $EndComp
 Wire Wire Line
 	5250 6200 5350 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX99
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX99
 U 1 1 5F2EDFEE
 P 8700 6800
 F 0 "MX99" H 8733 7023 60  0000 C CNN
@@ -2639,7 +2288,7 @@ F 3 "" H 8075 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D101
+L aek2_usb-rescue:D_Small-Device D101
 U 1 1 5F2EDFF8
 P 8550 7050
 F 0 "D101" V 8596 6980 50  0000 R CNN
@@ -2652,7 +2301,7 @@ $EndComp
 Wire Wire Line
 	8550 6950 8650 6950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX80
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX80
 U 1 1 5F2EE003
 P 5950 6050
 F 0 "MX80" H 5983 6273 60  0000 C CNN
@@ -2663,7 +2312,7 @@ F 3 "" H 5325 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D82
+L aek2_usb-rescue:D_Small-Device D82
 U 1 1 5F2EE00D
 P 5800 6300
 F 0 "D82" V 5846 6230 50  0000 R CNN
@@ -2676,7 +2325,7 @@ $EndComp
 Wire Wire Line
 	5800 6200 5900 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX81
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX81
 U 1 1 5F2EE018
 P 6500 6050
 F 0 "MX81" H 6533 6273 60  0000 C CNN
@@ -2687,7 +2336,7 @@ F 3 "" H 5875 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D83
+L aek2_usb-rescue:D_Small-Device D83
 U 1 1 5F2EE022
 P 6350 6300
 F 0 "D83" V 6396 6230 50  0000 R CNN
@@ -2700,7 +2349,7 @@ $EndComp
 Wire Wire Line
 	6350 6200 6450 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX82
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX82
 U 1 1 5F2EE02D
 P 7050 6050
 F 0 "MX82" H 7083 6273 60  0000 C CNN
@@ -2711,7 +2360,7 @@ F 3 "" H 6425 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D84
+L aek2_usb-rescue:D_Small-Device D84
 U 1 1 5F2EE037
 P 6900 6300
 F 0 "D84" V 6946 6230 50  0000 R CNN
@@ -2726,7 +2375,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 6950 4800 6950
 $Comp
-L Device:D_Small D94
+L aek2_usb-rescue:D_Small-Device D94
 U 1 1 5F2EE08F
 P 4700 7050
 F 0 "D94" V 4746 6980 50  0000 R CNN
@@ -2737,7 +2386,7 @@ F 3 "~" V 4700 7050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX92
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX92
 U 1 1 5F2EE099
 P 4850 6800
 F 0 "MX92" H 4883 7023 60  0000 C CNN
@@ -2748,7 +2397,7 @@ F 3 "" H 4225 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX78
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX78
 U 1 1 5F2EE0A5
 P 4850 6050
 F 0 "MX78" H 4883 6273 60  0000 C CNN
@@ -2759,7 +2408,7 @@ F 3 "" H 4225 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D80
+L aek2_usb-rescue:D_Small-Device D80
 U 1 1 5F2EE0AF
 P 4700 6300
 F 0 "D80" V 4746 6230 50  0000 R CNN
@@ -2774,7 +2423,7 @@ Wire Wire Line
 Text GLabel 4700 6400 0    50   Input ~ 0
 row6
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX93
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX93
 U 1 1 5F2EE0E9
 P 5400 6800
 F 0 "MX93" H 5433 7023 60  0000 C CNN
@@ -2785,7 +2434,7 @@ F 3 "" H 4775 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D95
+L aek2_usb-rescue:D_Small-Device D95
 U 1 1 5F2EE0F3
 P 5250 7050
 F 0 "D95" V 5296 6980 50  0000 R CNN
@@ -2798,7 +2447,7 @@ $EndComp
 Wire Wire Line
 	5250 6950 5350 6950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX95
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX95
 U 1 1 5F2EE102
 P 6500 6800
 F 0 "MX95" H 6533 7023 60  0000 C CNN
@@ -2809,7 +2458,7 @@ F 3 "" H 5875 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D97
+L aek2_usb-rescue:D_Small-Device D97
 U 1 1 5F2EE10C
 P 6350 7050
 F 0 "D97" V 6396 6980 50  0000 R CNN
@@ -2827,7 +2476,7 @@ Connection ~ 7750 5250
 Connection ~ 11050 5250
 Connection ~ 12150 5250
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX85
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX85
 U 1 1 5F3D02F1
 P 8700 6050
 F 0 "MX85" H 8733 6273 60  0000 C CNN
@@ -2838,7 +2487,7 @@ F 3 "" H 8075 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D87
+L aek2_usb-rescue:D_Small-Device D87
 U 1 1 5F3D02FB
 P 8550 6300
 F 0 "D87" V 8596 6230 50  0000 R CNN
@@ -2851,7 +2500,7 @@ $EndComp
 Wire Wire Line
 	8550 6200 8650 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX101
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX101
 U 1 1 5F3D0306
 P 9800 6800
 F 0 "MX101" H 9833 7023 60  0000 C CNN
@@ -2862,7 +2511,7 @@ F 3 "" H 9175 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D103
+L aek2_usb-rescue:D_Small-Device D103
 U 1 1 5F3D0310
 P 9650 7050
 F 0 "D103" V 9696 6980 50  0000 R CNN
@@ -2875,7 +2524,7 @@ $EndComp
 Wire Wire Line
 	9650 6950 9750 6950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX102
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX102
 U 1 1 5F3D031B
 P 10350 6800
 F 0 "MX102" H 10383 7023 60  0000 C CNN
@@ -2886,7 +2535,7 @@ F 3 "" H 9725 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D104
+L aek2_usb-rescue:D_Small-Device D104
 U 1 1 5F3D0325
 P 10200 7050
 F 0 "D104" V 10246 6980 50  0000 R CNN
@@ -2899,7 +2548,7 @@ $EndComp
 Wire Wire Line
 	10200 6950 10300 6950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX103
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX103
 U 1 1 5F3D0330
 P 10900 6800
 F 0 "MX103" H 10933 7023 60  0000 C CNN
@@ -2910,7 +2559,7 @@ F 3 "" H 10275 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D105
+L aek2_usb-rescue:D_Small-Device D105
 U 1 1 5F3D033A
 P 10750 7050
 F 0 "D105" V 10796 6980 50  0000 R CNN
@@ -2923,7 +2572,7 @@ $EndComp
 Wire Wire Line
 	10750 6950 10850 6950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX88
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX88
 U 1 1 5F3D0345
 P 10350 6050
 F 0 "MX88" H 10383 6273 60  0000 C CNN
@@ -2934,7 +2583,7 @@ F 3 "" H 9725 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D90
+L aek2_usb-rescue:D_Small-Device D90
 U 1 1 5F3D034F
 P 10200 6300
 F 0 "D90" V 10246 6230 50  0000 R CNN
@@ -2947,7 +2596,7 @@ $EndComp
 Wire Wire Line
 	10200 6200 10300 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX87
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX87
 U 1 1 5F3D035A
 P 9800 6050
 F 0 "MX87" H 9833 6273 60  0000 C CNN
@@ -2958,7 +2607,7 @@ F 3 "" H 9175 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D89
+L aek2_usb-rescue:D_Small-Device D89
 U 1 1 5F3D0364
 P 9650 6300
 F 0 "D89" V 9696 6230 50  0000 R CNN
@@ -2973,7 +2622,7 @@ Wire Wire Line
 Wire Wire Line
 	11300 6950 11400 6950
 $Comp
-L Device:D_Small D106
+L aek2_usb-rescue:D_Small-Device D106
 U 1 1 5F3D03E6
 P 11300 7050
 F 0 "D106" V 11346 6980 50  0000 R CNN
@@ -2984,7 +2633,7 @@ F 3 "~" V 11300 7050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX104
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX104
 U 1 1 5F3D03F0
 P 11450 6800
 F 0 "MX104" H 11483 7023 60  0000 C CNN
@@ -2995,7 +2644,7 @@ F 3 "" H 10825 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX96
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX96
 U 1 1 5F3D03FC
 P 7050 6800
 F 0 "MX96" H 7083 7023 60  0000 C CNN
@@ -3006,7 +2655,7 @@ F 3 "" H 6425 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D98
+L aek2_usb-rescue:D_Small-Device D98
 U 1 1 5F3D0406
 P 6900 7050
 F 0 "D98" V 6946 6980 50  0000 R CNN
@@ -3021,7 +2670,7 @@ Wire Wire Line
 Text GLabel 4700 7150 0    50   Input ~ 0
 row7
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX89
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX89
 U 1 1 5F3D0428
 P 10900 6050
 F 0 "MX89" H 10933 6273 60  0000 C CNN
@@ -3032,7 +2681,7 @@ F 3 "" H 10275 6025 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D91
+L aek2_usb-rescue:D_Small-Device D91
 U 1 1 5F3D0432
 P 10750 6300
 F 0 "D91" V 10796 6230 50  0000 R CNN
@@ -3045,7 +2694,7 @@ $EndComp
 Wire Wire Line
 	10750 6200 10850 6200
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX98
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX98
 U 1 1 5F3D0440
 P 8150 6800
 F 0 "MX98" H 8183 7023 60  0000 C CNN
@@ -3056,7 +2705,7 @@ F 3 "" H 7525 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D100
+L aek2_usb-rescue:D_Small-Device D100
 U 1 1 5F3D044A
 P 8000 7050
 F 0 "D100" V 8046 6980 50  0000 R CNN
@@ -3069,7 +2718,7 @@ $EndComp
 Wire Wire Line
 	8000 6950 8100 6950
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX97
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX97
 U 1 1 5F3D0459
 P 7600 6800
 F 0 "MX97" H 7633 7023 60  0000 C CNN
@@ -3080,7 +2729,7 @@ F 3 "" H 6975 6775 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D99
+L aek2_usb-rescue:D_Small-Device D99
 U 1 1 5F3D0463
 P 7450 7050
 F 0 "D99" V 7496 6980 50  0000 R CNN
@@ -3099,103 +2748,7 @@ row6
 Text GLabel 2550 8750 1    50   Input ~ 0
 row7
 $Comp
-L Device:R R1
-U 1 1 5F6C47D8
-P 9450 10000
-F 0 "R1" V 9550 10000 50  0000 C CNN
-F 1 "1.5K" V 9450 10000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9380 10000 50  0001 C CNN
-F 3 "~" H 9450 10000 50  0001 C CNN
-	1    9450 10000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5350 10700 5200 10700
-Text GLabel 5350 10700 2    50   Input ~ 0
-boot
-Wire Wire Line
-	4650 10700 4800 10700
-Wire Wire Line
-	4650 10800 4650 10700
-$Comp
-L power:GND #PWR019
-U 1 1 5EC3D3C9
-P 4650 10800
-F 0 "#PWR019" H 4650 10550 50  0001 C CNN
-F 1 "GND" H 4655 10627 50  0000 C CNN
-F 2 "" H 4650 10800 50  0001 C CNN
-F 3 "" H 4650 10800 50  0001 C CNN
-	1    4650 10800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push Boot1
-U 1 1 5EC391E3
-P 5000 10700
-F 0 "Boot1" H 5000 10985 50  0000 C CNN
-F 1 "Boot" H 5000 10894 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5000 10900 50  0001 C CNN
-F 3 "~" H 5000 10900 50  0001 C CNN
-	1    5000 10700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Crystal XTAL1
-U 1 1 5F006AA5
-P 1550 10450
-F 0 "XTAL1" H 1550 10718 50  0000 C CNN
-F 1 "Crystal" H 1550 10627 50  0000 C CNN
-F 2 "Crystal:Crystal_HC49-4H_Vertical" H 1550 10450 50  0001 C CNN
-F 3 "~" H 1550 10450 50  0001 C CNN
-	1    1550 10450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 5F793D16
-P 7650 10750
-F 0 "J2" H 7730 10742 50  0000 L CNN
-F 1 "Conn_01x04" H 7730 10651 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 7650 10750 50  0001 C CNN
-F 3 "~" H 7650 10750 50  0001 C CNN
-	1    7650 10750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:AVR-ISP-6 AVR1
-U 1 1 5FACE06F
-P 11050 10450
-F 0 "AVR1" H 10721 10546 50  0000 R CNN
-F 1 "AVR-ISP-6" H 10721 10455 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Horizontal" V 10800 10500 50  0001 C CNN
-F 3 " ~" H 9775 9900 50  0001 C CNN
-	1    11050 10450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 5F009381
-P 1700 10700
-F 0 "C5" H 1792 10746 50  0000 L CNN
-F 1 "22p" H 1792 10655 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 1700 10700 50  0001 C CNN
-F 3 "~" H 1700 10700 50  0001 C CNN
-	1    1700 10700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 5F007CAF
-P 1400 10700
-F 0 "C4" H 1200 10750 50  0000 L CNN
-F 1 "22p" H 1200 10650 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 1400 10700 50  0001 C CNN
-F 3 "~" H 1400 10700 50  0001 C CNN
-	1    1400 10700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED LED1
+L aek2_usb-rescue:LED-Device LED1
 U 1 1 5F738D92
 P 6550 9650
 F 0 "LED1" H 6543 9867 50  0000 C CNN
@@ -3206,7 +2759,7 @@ F 3 "~" H 6550 9650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L aek2_usb-rescue:R-Device R5
 U 1 1 5F73A7C8
 P 6250 9650
 F 0 "R5" V 6350 9650 50  0000 C CNN
@@ -3217,7 +2770,7 @@ F 3 "~" H 6250 9650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR04
+L aek2_usb-rescue:GND-power #PWR04
 U 1 1 5F7655F7
 P 5950 9650
 F 0 "#PWR04" H 5950 9400 50  0001 C CNN
@@ -3230,7 +2783,7 @@ $EndComp
 Wire Wire Line
 	6100 9650 5950 9650
 $Comp
-L Device:LED LED2
+L aek2_usb-rescue:LED-Device LED2
 U 1 1 5F7BA716
 P 6550 10250
 F 0 "LED2" H 6543 10467 50  0000 C CNN
@@ -3241,7 +2794,7 @@ F 3 "~" H 6550 10250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L aek2_usb-rescue:R-Device R6
 U 1 1 5F7BA720
 P 6250 10250
 F 0 "R6" V 6350 10250 50  0000 C CNN
@@ -3252,7 +2805,7 @@ F 3 "~" H 6250 10250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR013
+L aek2_usb-rescue:GND-power #PWR013
 U 1 1 5F7BA735
 P 5950 10250
 F 0 "#PWR013" H 5950 10000 50  0001 C CNN
@@ -3265,7 +2818,7 @@ $EndComp
 Wire Wire Line
 	6100 10250 5950 10250
 $Comp
-L Device:LED LED3
+L aek2_usb-rescue:LED-Device LED3
 U 1 1 5F89263F
 P 6550 10850
 F 0 "LED3" H 6543 11067 50  0000 C CNN
@@ -3276,7 +2829,7 @@ F 3 "~" H 6550 10850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L aek2_usb-rescue:R-Device R7
 U 1 1 5F892649
 P 6250 10850
 F 0 "R7" V 6350 10850 50  0000 C CNN
@@ -3287,7 +2840,7 @@ F 3 "~" H 6250 10850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR020
+L aek2_usb-rescue:GND-power #PWR020
 U 1 1 5F89265E
 P 5950 10850
 F 0 "#PWR020" H 5950 10600 50  0001 C CNN
@@ -3317,7 +2870,7 @@ Wire Wire Line
 	10750 1700 10850 1700
 Connection ~ 10750 1900
 $Comp
-L Device:D_Small D12
+L aek2_usb-rescue:D_Small-Device D12
 U 1 1 5ED2E91F
 P 10750 1800
 F 0 "D12" V 10796 1730 50  0000 R CNN
@@ -3328,7 +2881,7 @@ F 3 "~" V 10750 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX10
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX10
 U 1 1 5ED2E915
 P 10900 1550
 F 0 "MX10" H 10933 1773 60  0000 C CNN
@@ -3345,7 +2898,7 @@ Wire Wire Line
 Wire Wire Line
 	11300 1700 11400 1700
 $Comp
-L Device:D_Small D13
+L aek2_usb-rescue:D_Small-Device D13
 U 1 1 5F30D6E8
 P 11300 1800
 F 0 "D13" V 11346 1730 50  0000 R CNN
@@ -3356,7 +2909,7 @@ F 3 "~" V 11300 1800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX11
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX11
 U 1 1 5F30D6F2
 P 11450 1550
 F 0 "MX11" H 11483 1773 60  0000 C CNN
@@ -3374,7 +2927,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 6950 9200 6950
 $Comp
-L Device:D_Small D102
+L aek2_usb-rescue:D_Small-Device D102
 U 1 1 5F3D02E6
 P 9100 7050
 F 0 "D102" V 9146 6980 50  0000 R CNN
@@ -3385,7 +2938,7 @@ F 3 "~" V 9100 7050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX100
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX100
 U 1 1 5F3D02DC
 P 9250 6800
 F 0 "MX100" H 9283 7023 60  0000 C CNN
@@ -3398,7 +2951,7 @@ $EndComp
 Wire Wire Line
 	7450 6200 7550 6200
 $Comp
-L Device:D_Small D85
+L aek2_usb-rescue:D_Small-Device D85
 U 1 1 5F3D038E
 P 7450 6300
 F 0 "D85" V 7496 6230 50  0000 R CNN
@@ -3409,7 +2962,7 @@ F 3 "~" V 7450 6300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX83
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX83
 U 1 1 5F3D0384
 P 7600 6050
 F 0 "MX83" H 7633 6273 60  0000 C CNN
@@ -3422,7 +2975,7 @@ $EndComp
 Wire Wire Line
 	5800 6950 5900 6950
 $Comp
-L Device:D_Small D96
+L aek2_usb-rescue:D_Small-Device D96
 U 1 1 5F3D0379
 P 5800 7050
 F 0 "D96" V 5846 6980 50  0000 R CNN
@@ -3433,7 +2986,7 @@ F 3 "~" V 5800 7050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX94
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX94
 U 1 1 5F3D036F
 P 5950 6800
 F 0 "MX94" H 5983 7023 60  0000 C CNN
@@ -3455,7 +3008,7 @@ col9
 Text GLabel 3750 8750 1    50   Input ~ 0
 col8
 $Comp
-L Mechanical:MountingHole_Pad H2
+L aek2_usb-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 60182D86
 P 15000 9500
 F 0 "H2" H 15100 9549 50  0000 L CNN
@@ -3466,7 +3019,7 @@ F 3 "~" H 15000 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H1
+L aek2_usb-rescue:MountingHole_Pad-Mechanical H1
 U 1 1 601837BF
 P 13800 9500
 F 0 "H1" H 13900 9549 50  0000 L CNN
@@ -3477,7 +3030,7 @@ F 3 "~" H 13800 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L aek2_usb-rescue:GND-power #PWR02
 U 1 1 60183FC7
 P 13800 9600
 F 0 "#PWR02" H 13800 9350 50  0001 C CNN
@@ -3488,7 +3041,7 @@ F 3 "" H 13800 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR03
+L aek2_usb-rescue:GND-power #PWR03
 U 1 1 6018435D
 P 15000 9600
 F 0 "#PWR03" H 15000 9350 50  0001 C CNN
@@ -3526,7 +3079,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 6200 9200 6200
 $Comp
-L Device:D_Small D88
+L aek2_usb-rescue:D_Small-Device D88
 U 1 1 5F2EE0DB
 P 9100 6300
 F 0 "D88" V 9146 6230 50  0000 R CNN
@@ -3537,7 +3090,7 @@ F 3 "~" V 9100 6300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX86
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX86
 U 1 1 5F2EE0D1
 P 9250 6050
 F 0 "MX86" H 9283 6273 60  0000 C CNN
@@ -3659,7 +3212,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 5450 9750 5450
 $Comp
-L Device:D_Small D76
+L aek2_usb-rescue:D_Small-Device D76
 U 1 1 5F2AF201
 P 9650 5550
 F 0 "D76" V 9696 5480 50  0000 R CNN
@@ -3670,7 +3223,7 @@ F 3 "~" V 9650 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX74
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX74
 U 1 1 5F2AF1F7
 P 9800 5300
 F 0 "MX74" H 9833 5523 60  0000 C CNN
@@ -3681,7 +3234,7 @@ F 3 "" H 9175 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX72
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX72
 U 1 1 5F2AF1BE
 P 8700 5300
 F 0 "MX72" H 8733 5523 60  0000 C CNN
@@ -3692,7 +3245,7 @@ F 3 "" H 8075 5275 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D74
+L aek2_usb-rescue:D_Small-Device D74
 U 1 1 5F2AF1B4
 P 8550 5550
 F 0 "D74" V 8596 5480 50  0000 R CNN
@@ -3707,7 +3260,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 5450 8100 5450
 $Comp
-L Device:D_Small D73
+L aek2_usb-rescue:D_Small-Device D73
 U 1 1 5F2AF0F3
 P 8000 5550
 F 0 "D73" V 8046 5480 50  0000 R CNN
@@ -3718,7 +3271,7 @@ F 3 "~" V 8000 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX71
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX71
 U 1 1 5F2AF0E9
 P 8150 5300
 F 0 "MX71" H 8183 5523 60  0000 C CNN
@@ -3761,75 +3314,7 @@ Connection ~ 9400 5250
 Wire Wire Line
 	9400 5250 9400 6000
 $Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 613BA30F
-P 7650 9950
-F 0 "J1" H 7730 9942 50  0000 L CNN
-F 1 "Conn_01x04" H 7730 9851 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 7650 9950 50  0001 C CNN
-F 3 "~" H 7650 9950 50  0001 C CNN
-	1    7650 9950
-	-1   0    0    1   
-$EndComp
-Text GLabel 8650 10100 0    50   Input ~ 0
-JST-D+
-Text GLabel 8650 10200 0    50   Input ~ 0
-JST-D-
-Text GLabel 7850 9850 2    50   Input ~ 0
-JST-D+
-Text GLabel 7850 9950 2    50   Input ~ 0
-JST-D-
-Text GLabel 7850 10750 2    50   Input ~ 0
-JST-D-
-Text GLabel 7850 10650 2    50   Input ~ 0
-JST-D+
-$Comp
-L power:VCC #PWR06
-U 1 1 6148BBA9
-P 7850 9750
-F 0 "#PWR06" H 7850 9600 50  0001 C CNN
-F 1 "VCC" H 7867 9923 50  0000 C CNN
-F 2 "" H 7850 9750 50  0001 C CNN
-F 3 "" H 7850 9750 50  0001 C CNN
-	1    7850 9750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR014
-U 1 1 6148C119
-P 7850 10550
-F 0 "#PWR014" H 7850 10400 50  0001 C CNN
-F 1 "VCC" H 7867 10723 50  0000 C CNN
-F 2 "" H 7850 10550 50  0001 C CNN
-F 3 "" H 7850 10550 50  0001 C CNN
-	1    7850 10550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR021
-U 1 1 6148C745
-P 7850 10850
-F 0 "#PWR021" H 7850 10600 50  0001 C CNN
-F 1 "GND" H 7855 10677 50  0000 C CNN
-F 2 "" H 7850 10850 50  0001 C CNN
-F 3 "" H 7850 10850 50  0001 C CNN
-	1    7850 10850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 6148CDF2
-P 7850 10050
-F 0 "#PWR010" H 7850 9800 50  0001 C CNN
-F 1 "GND" H 7855 9877 50  0000 C CNN
-F 2 "" H 7850 10050 50  0001 C CNN
-F 3 "" H 7850 10050 50  0001 C CNN
-	1    7850 10050
-	1    0    0    -1  
-$EndComp
-Connection ~ 9200 10700
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX43
+L aek2_usb-rescue:MX-NoLED-MX_Alps_Hybrid MX43
 U 1 1 5ED5A98F
 P 5950 3800
 F 0 "MX43" H 5983 4023 60  0000 C CNN
@@ -3872,4 +3357,126 @@ Connection ~ 10500 3750
 Connection ~ 10500 4500
 Wire Wire Line
 	10500 4500 10500 3750
+$Comp
+L aek2_usb-rescue:GND-power #PWR010
+U 1 1 6148CDF2
+P 7850 9200
+F 0 "#PWR010" H 7850 8950 50  0001 C CNN
+F 1 "GND" H 7855 9027 50  0000 C CNN
+F 2 "" H 7850 9200 50  0001 C CNN
+F 3 "" H 7850 9200 50  0001 C CNN
+	1    7850 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L aek2_usb-rescue:GND-power #PWR021
+U 1 1 6148C745
+P 7850 10000
+F 0 "#PWR021" H 7850 9750 50  0001 C CNN
+F 1 "GND" H 7855 9827 50  0000 C CNN
+F 2 "" H 7850 10000 50  0001 C CNN
+F 3 "" H 7850 10000 50  0001 C CNN
+	1    7850 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L aek2_usb-rescue:VCC-power #PWR014
+U 1 1 6148C119
+P 7850 9700
+F 0 "#PWR014" H 7850 9550 50  0001 C CNN
+F 1 "VCC" H 7867 9873 50  0000 C CNN
+F 2 "" H 7850 9700 50  0001 C CNN
+F 3 "" H 7850 9700 50  0001 C CNN
+	1    7850 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L aek2_usb-rescue:VCC-power #PWR06
+U 1 1 6148BBA9
+P 7850 8900
+F 0 "#PWR06" H 7850 8750 50  0001 C CNN
+F 1 "VCC" H 7867 9073 50  0000 C CNN
+F 2 "" H 7850 8900 50  0001 C CNN
+F 3 "" H 7850 8900 50  0001 C CNN
+	1    7850 8900
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 9800 2    50   Input ~ 0
+JST-D+
+Text GLabel 7850 9900 2    50   Input ~ 0
+JST-D-
+Text GLabel 7850 9100 2    50   Input ~ 0
+JST-D-
+Text GLabel 7850 9000 2    50   Input ~ 0
+JST-D+
+$Comp
+L aek2_usb-rescue:Conn_01x04-Connector_Generic J1
+U 1 1 613BA30F
+P 7650 9100
+F 0 "J1" H 7730 9092 50  0000 L CNN
+F 1 "Conn_01x04" H 7730 9001 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 7650 9100 50  0001 C CNN
+F 3 "~" H 7650 9100 50  0001 C CNN
+	1    7650 9100
+	-1   0    0    1   
+$EndComp
+$Comp
+L aek2_usb-rescue:Conn_01x04-Connector_Generic J2
+U 1 1 5F793D16
+P 7650 9900
+F 0 "J2" H 7730 9892 50  0000 L CNN
+F 1 "Conn_01x04" H 7730 9801 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 7650 9900 50  0001 C CNN
+F 3 "~" H 7650 9900 50  0001 C CNN
+	1    7650 9900
+	-1   0    0    1   
+$EndComp
+$Comp
+L aek2_usb-rescue:GND-power #PWR?
+U 1 1 60DF9A23
+P 7850 10850
+F 0 "#PWR?" H 7850 10600 50  0001 C CNN
+F 1 "GND" H 7855 10677 50  0000 C CNN
+F 2 "" H 7850 10850 50  0001 C CNN
+F 3 "" H 7850 10850 50  0001 C CNN
+	1    7850 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L aek2_usb-rescue:VCC-power #PWR?
+U 1 1 60DF9A29
+P 7850 10550
+F 0 "#PWR?" H 7850 10400 50  0001 C CNN
+F 1 "VCC" H 7867 10723 50  0000 C CNN
+F 2 "" H 7850 10550 50  0001 C CNN
+F 3 "" H 7850 10550 50  0001 C CNN
+	1    7850 10550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 10650 2    50   Input ~ 0
+JST-D+
+Text GLabel 7850 10750 2    50   Input ~ 0
+JST-D-
+$Comp
+L aek2_usb-rescue:Conn_01x04-Connector_Generic J3
+U 1 1 60DF9A31
+P 7650 10750
+F 0 "J3" H 7730 10742 50  0000 L CNN
+F 1 "Conn_01x04" H 7730 10651 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S4B-PH-K_1x04_P2.00mm_Horizontal" H 7650 10750 50  0001 C CNN
+F 3 "~" H 7650 10750 50  0001 C CNN
+	1    7650 10750
+	-1   0    0    1   
+$EndComp
+$Comp
+L aek2_usb-rescue:ATmega32A-PU-MCU_Microchip_ATmega U1
+U 1 1 5EC14C29
+P 2950 9350
+F 0 "U1" H 2950 7261 50  0000 C CNN
+F 1 "ATmega32A-PU" H 2950 7170 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 2950 9350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H 2950 9350 50  0001 C CNN
+	1    2950 9350
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
