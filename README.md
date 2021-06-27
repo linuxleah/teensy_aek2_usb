@@ -17,11 +17,11 @@ The USB breakout PCB/Daughterboard is NOT included in this repo. You will have t
 Pretty much any kind of breakout board that has usable VCC, GND, D+ and D- pins should work for this.  
 Example: https://www.adafruit.com/product/1764
 
-|Count|Part|Designator|Octopart URL|
+|Count|Part|Designator|URL|
 |-|-|-|-|
-|1|ATmega32A 40 pin DIP (32L works too)|U1|[Atmega32a-pu](https://octopart.com/atmega32a-pu-microchip-77760288)|
+|1|Teensy++ 2.0 microcontroller|U1|[Atmega32a-pu](https://www.pjrc.com/store/teensypp.html)|
 |1|40 pin DIP socket (optional but highly recommended)|U1|[TE Connectivity 1-2199299-5](https://octopart.com/1-2199299-5-te+connectivity-34963610)|
-|3|JST PH 2mm 4pin connector + cable|J1, J2|[JST S4B-PH-K-S](https://octopart.com/s4b-ph-k-s+%28lf%29%28sn%29-jst-5373077)|
+|3|JST PH 2mm 4pin connector + cable|J1, J2, J3|[JST S4B-PH-K-S](https://octopart.com/s4b-ph-k-s+%28lf%29%28sn%29-jst-5373077)|
 |1|USB breakout PCB||[Adafruit 1833](https://octopart.com/1833-adafruit+industries-53099556)|
 |3|5mm LED (for the lock indicators)|LED1, LED2, LED3|[Vishay TLHG5400](https://octopart.com/tlhg5400-vishay-39403037)|
 |105|universal switching diode (DO-35 1N4148)|D3-D107|[ON Semiconductor 1N4148](https://octopart.com/1n4148-on+semiconductor-6807167)|
