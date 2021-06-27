@@ -5,7 +5,8 @@
 #### QMK compatible drop-in replacement PCB for the Apple Extended Keyboard II - Now featuring Teensy++ 2.0!
 The PCB is built entirely with THT parts to keep a somewhat "vintage" look to it and it uses a 40-pin Teensy++ 2.0, mounted in a socket.
 The controller is placed in the exact same location as the one on the original PCB.
-This is a trivial fork of the original aek2_usb by kb-elmo: https://github.com/kb-elmo/aek2_usb
+
+This is a trivial fork of the original aek2_usb by kb-elmo: https://github.com/kb-elmo/aek2_usb. All credit to Elmo for his original work! I've just edited it a bit.
 
 This version simplifies the design and adds additional power (and RAM) by relying on a Teensy++ 2.0 to handle all USB operations and run the firmware.
 
